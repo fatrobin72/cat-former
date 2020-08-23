@@ -1,0 +1,505 @@
+; no$gmb format .sym file
+; Generated automagically by ASxxxx linker V01.75 (SDK 3.0.0)
+; Area: .  .ABS.
+00:0000 s__HEADERf
+00:0000 s__CABS
+00:0000 s__HEADER0
+00:0000 s__DABS
+00:0000 s__HEADER1
+00:0000 s__HEADER2
+00:0000 s__HEADER3
+00:0000 s__SFR1a
+00:0000 s__HEADER4
+00:0000 s__SFR2a
+00:0000 s__SFR1b
+00:0000 s__HEADER5
+00:0000 s__SFR2b
+00:0000 s__SFR1c
+00:0000 s__HEADER6
+00:0000 s__SFR2c
+00:0000 s__SFR1d
+00:0000 s__HEADER7
+00:0000 s__SFR2d
+00:0000 s__SFR1e
+00:0000 s__HEADER8
+00:0000 s__SFR2e
+00:0000 s__SFR1f
+00:0000 s__HEADER9
+00:0000 s__SFR2f
+00:0000 s__DRAW_HEADER0
+00:0000 s__CALLHL_HEADER0
+00:0000 s__HRAM
+00:0000 s__HEADER
+00:0000 s__SFR10
+00:0000 s__SFRa
+00:0000 s__SFR20
+00:0000 s__SFR11
+00:0000 s__SFRb
+00:0000 s__SFR30
+00:0000 s__SFR21
+00:0000 s__SFR12
+00:0000 s__SFRc
+00:0000 s__FONT_HEADER0
+00:0000 s__SFR31
+00:0000 s__SFR22
+00:0000 s__SFR13
+00:0000 s__SFRd
+00:0000 s__SFR32
+00:0000 s__SFR23
+00:0000 s__SFR14
+00:0000 s__SFRe
+00:0000 s__SFR33
+00:0000 s__SFR24
+00:0000 s__SFR15
+00:0000 s__SFRf
+00:0000 .init
+00:0000 s__SFR34
+00:0000 s__SFR25
+00:0000 s__SFR16
+00:0000 s__SFR35
+00:0000 s__SFR26
+00:0000 s__SFR17
+00:0000 s__SFR36
+00:0000 s__SFR27
+00:0000 s__SFR18
+00:0000 s__SFR28
+00:0000 s__SFR19
+00:0000 s__DRAW_HEADER
+00:0000 s__SFR29
+00:0000 s__CALLHL_HEADER
+00:0000 s__SFR0
+00:0000 s__SFR1
+00:0000 s__SFR2
+00:0000 s__SFR3
+00:0000 s__FONT_HEADER
+00:0000 s__SFR4
+00:0000 s__SFR5
+00:0000 s__SFR6
+00:0000 s__SFR7
+00:0000 s__SFR8
+00:0000 s__SFR9
+00:0000 s__HEADER10
+00:0000 s__HEADERa
+00:0000 s__SFR
+00:0000 s__HEADER11
+00:0000 s__HEADERb
+00:0000 s__HRAM13
+00:0000 s__HEADER12
+00:0000 s__HEADERc
+00:0000 s__HEADERd
+00:0000 s__HEADERe
+00:0200 s__CODE
+01:5FBD s__HOME
+01:63ED s__BASE
+01:75AB s__LIT
+01:75AB s__GSINIT
+01:7B71 s__GSINITTAIL
+01:7B72 s__GSFINAL
+00:C000 .OAM
+00:C0A0 s__DATA
+00:C21A s__BSS
+00:C29D s__HEAP
+00:E000 .STACK
+00:FF80 .refresh_OAM
+; Area: _CODE
+00:0200 _performantDelay
+00:0210 _backgroundMap1
+00:060C _backgroundMap2
+00:0A08 _backgroundMap3
+00:0E04 _BlankMap
+00:0F6C _moveGameCharacter
+00:0FAE _hideGameCharacter
+00:0FE5 _checkCollisionsObject
+00:116D _checkCollisionsCharacter
+00:12F5 _soundInit
+00:1302 _JumpingSound
+00:1317 _WinSound
+00:1340 _wouldHitSurface
+00:1418 _canStandOnTopOf
+00:141C _blank
+00:141D _jump
+00:159F _gravity
+00:15A0 _HSpeed
+00:15A1 _VSpeed
+00:15A2 _playerX
+00:15A3 _maxDownSpeed
+00:15A4 _maxLives
+00:15A5 _noLives
+00:15A6 _setupPlayerSprite
+00:163D _hideEnemies
+00:167D _DrawEnemiesWhoAreVisable
+00:172E _ScrollEnemies
+00:1795 _EnemyPatrol
+00:19AA _Map1SetupEnemies
+00:1ACD _Map2SetupEnemies
+00:1BF0 _Map3SetupEnemies
+00:1D13 _hideCards
+00:1D5E _cards_target
+00:1D5F _noCards
+00:1D60 _DrawCardsThatAreVisable
+00:1E49 _ScrollCards
+00:1EB7 _Map1SetupCards
+00:1F43 _Map2SetupCards
+00:1FCF _Map3SetupCards
+00:205B _startScreen
+00:2097 _startscreen_data
+00:2937 _startscreen_map
+00:2A9F _GameOverScreen
+00:2ADE _GameOver_data
+00:3A7E _GameOver_map
+00:3BE6 _WinScreen
+00:3C25 _YouWin_data
+01:4BE5 _YouWin_map
+01:4D4D _plainSplashScreen
+01:4D8E _resetGameLogic
+01:4DB3 _BackStory
+01:4EB0 _Level1ClearMessage
+01:4EE9 _Level2ClearMessage
+01:4F22 _drawBackground1
+01:4F64 _DrawLevel1
+01:5012 _drawBackground2
+01:5054 _DrawLevel2
+01:5102 _drawBackground3
+01:5144 _DrawLevel3
+01:51F2 _scroll
+01:5200 _loseLife
+01:5269 _checkCollisionsWithCards
+01:52FB _checkCollisionsWithEnemies
+01:534F _gameLoop
+01:5695 _main
+01:5711 _putchar
+01:571A _setchar
+01:5723 _gotoxy
+01:572E _posx
+01:573F _posy
+01:5750 .adv_gcurs
+01:576D .circle
+01:5810 .horlin
+01:5848 .verlin
+01:58A4 .circplot
+01:5922 .box
+01:59F8 .line
+01:5B19 .xonly
+01:5C68 .yonly
+01:5C89 .plot
+01:5CA6 .wrbyte
+01:5D28 .getpix
+01:5D5D .wrtchr
+01:5DC1 _gotogxy
+01:5DCC _wrtchr
+01:5DE1 _getpix
+01:5DED _color
+01:5DFC _circle
+01:5E16 _box
+01:5E3A _line
+01:5E52 _plot_point
+01:5E66 _plot
+01:5E82 __divsuchar
+01:5E91 __modsuchar
+01:5E9D __divuschar
+01:5EAF __moduschar
+01:5EBF __divschar
+01:5ECD __modschar
+01:5ED9 __divsint
+01:5EEC __modsint
+01:5EFD __divuchar
+01:5F0B __moduchar
+01:5F17 __divuint
+01:5F2A __moduint
+01:5F3B .mod8
+01:5F3B .div8
+01:5F43 .mod16
+01:5F43 .div16
+01:5F79 .modu8
+01:5F79 .divu8
+01:5F7C .modu16
+01:5F7C .divu16
+; Area: _HEADER0
+; Area: _HEADER1
+; Area: _HEADER2
+; Area: _HEADER3
+; Area: _HEADER4
+; Area: _HEADER5
+; Area: _HEADER6
+; Area: _HEADER7
+; Area: _HEADER8
+; Area: _HEADER9
+; Area: _HEADERa
+; Area: _HEADERb
+; Area: _HEADERc
+; Area: _HEADERd
+; Area: _HEADERe
+; Area: _HEADERf
+; Area: _HEADER10
+; Area: _HEADER11
+00:01D0 _exit
+; Area: _HEADER12
+; Area: _HOME
+01:5FBD .set_mode
+01:5FCD .remove_VBL
+01:5FD3 .remove_LCD
+01:5FD9 .remove_TIM
+01:5FDF .remove_SIO
+01:5FE5 .remove_JOY
+01:5FEB .add_VBL
+01:5FF1 .add_LCD
+01:5FF7 .add_TIM
+01:5FFD .add_SIO
+01:6003 .add_JOY
+01:6009 .remove_int
+01:6028 .add_int
+01:6044 .wait_vbl_done
+01:6044 _wait_vbl_done
+01:605B _display_off
+01:605B .display_off
+01:607C .serial_IO
+01:60AB _mode
+01:60B4 _get_mode
+01:60B9 _enable_interrupts
+01:60BB _disable_interrupts
+01:60BD _reset
+01:60BD .reset
+01:60C3 _set_interrupts
+01:60CE _remove_VBL
+01:60D9 _remove_LCD
+01:60E4 _remove_TIM
+01:60EF _remove_SIO
+01:60FA _remove_JOY
+01:6105 _add_VBL
+01:6110 _add_LCD
+01:611B _add_TIM
+01:6126 _add_SIO
+01:6131 _add_JOY
+01:613C _clock
+01:6145 __printTStates
+01:6146 banked_call
+01:615D banked_ret
+01:6165 _printf
+01:6180 _sprintf
+; Area: _BASE
+01:63ED font_copy_uncompressed
+01:6423 font_copy_compressed
+01:6478 font_load
+01:64C0 font_copy_current
+01:6508 font_set
+01:6515 .put_char
+01:652E .out_char
+01:6535 .del_char
+01:6590 _font_load
+01:659E _font_set
+01:65AD _font_init
+01:65CF _cls
+01:65CF .cls
+01:6601 .cr_curs
+01:6616 .adv_curs
+01:6672 .tmode
+01:669B .tmode_out
+01:66AB .set_sprite_prop
+01:66B8 _set_sprite_prop
+01:66C3 _scroll_bkg
+01:66D9 _move_win
+01:66E2 .padup
+01:66E2 _waitpadup
+01:66F2 .jpad
+01:671F .wait_pad
+01:6726 _joypad
+01:672B _waitpad
+01:6735 .mv_sprite
+01:6744 _move_sprite
+01:6751 _set_win_tiles
+01:6765 _set_win_data
+01:6765 _set_bkg_data
+01:676D _set_sprite_data
+01:67E3 _font_load_ibm_fixed
+01:67EA _font_ibm_fixed
+01:68EC _font_ibm_fixed_tiles
+01:70EC .gmode
+01:714E .vbl
+01:7159 .lcd
+01:7166 .draw_image
+01:7170 .switch_data
+01:71AA _switch_data
+01:71C5 _draw_image
+01:71D8 .y_table
+01:72F8 _move_bkg
+01:7301 .set_sprite_tile
+01:730E _set_sprite_tile
+01:7319 .get_sprite_prop
+01:7326 _get_sprite_prop
+01:732F .init_vram
+01:733D .init_wtt
+01:734D .init_btt
+01:735B .init_tt
+01:7361 _font_min
+01:750B .copy_vram
+01:751A _get_data
+01:751A _set_data
+01:752D _set_bkg_tiles
+01:7541 .set_xy_wtt
+01:7552 .set_xy_btt
+01:7561 .set_xy_tt
+01:7592 _set_tiles
+; Area: _LIT
+; Area: _GSINIT
+01:75AB gsinit
+; Area: _GSINITTAIL
+; Area: _GSFINAL
+; Area: _DATA
+00:C0A0 _Sprites
+00:C100 _Objects
+00:C120 _TileSet
+00:C1B0 _windowMap
+00:C1BE _player
+00:C1C7 _lives
+00:C1C8 _lifetimer
+00:C1C9 _Enemies
+00:C1F9 _cards_collected
+00:C1FA _cards
+00:C212 _gamerunning
+00:C213 _level1Win
+00:C214 _level2Win
+00:C215 _level3Win
+00:C216 _columnOffset
+00:C217 _ScrollXFlag
+00:C218 _counter
+; Area: _BSS
+00:C21A __cpu
+00:C21B .mode
+00:C21C __io_out
+00:C21D __io_in
+00:C21E __io_status
+00:C21F .vbl_done
+00:C220 _sys_time
+00:C220 .sys_time
+00:C222 .int_0x40
+00:C232 .int_0x48
+00:C242 .int_0x50
+00:C252 .int_0x58
+00:C262 .int_0x60
+00:C272 font_current
+00:C275 font_first_free_tile
+00:C276 font_table
+00:C288 .curx
+00:C289 .cury
+00:C28A .fg_colour
+00:C28B .bg_colour
+; Area: _HEAP
+00:C29D _malloc_heap_start
+; Area: _HRAM13
+00:FF90 __current_bank
+; Area: _SFR0
+00:FF00 _P1_REG
+; Area: _SFR1
+00:FF01 _SB_REG
+; Area: _SFR2
+00:FF02 _SC_REG
+; Area: _SFR3
+00:FF04 _DIV_REG
+; Area: _SFR4
+00:FF05 _TIMA_REG
+; Area: _SFR5
+00:FF06 _TMA_REG
+; Area: _SFR6
+00:FF07 _TAC_REG
+; Area: _SFR7
+00:FF0F _IF_REG
+; Area: _SFR8
+00:FF10 _NR10_REG
+; Area: _SFR9
+00:FF11 _NR11_REG
+; Area: _SFRa
+00:FF12 _NR12_REG
+; Area: _SFRb
+00:FF13 _NR13_REG
+; Area: _SFRc
+00:FF14 _NR14_REG
+; Area: _SFRd
+00:FF16 _NR21_REG
+; Area: _SFRe
+00:FF17 _NR22_REG
+; Area: _SFRf
+00:FF18 _NR23_REG
+; Area: _SFR10
+00:FF19 _NR24_REG
+; Area: _SFR11
+00:FF1A _NR30_REG
+; Area: _SFR12
+00:FF1B _NR31_REG
+; Area: _SFR13
+00:FF1C _NR32_REG
+; Area: _SFR14
+00:FF1D _NR33_REG
+; Area: _SFR15
+00:FF1E _NR34_REG
+; Area: _SFR16
+00:FF20 _NR41_REG
+; Area: _SFR17
+00:FF21 _NR42_REG
+; Area: _SFR18
+00:FF22 _NR43_REG
+; Area: _SFR19
+00:FF23 _NR44_REG
+; Area: _SFR1a
+00:FF24 _NR50_REG
+; Area: _SFR1b
+00:FF25 _NR51_REG
+; Area: _SFR1c
+00:FF26 _NR52_REG
+; Area: _SFR1d
+00:FF40 _LCDC_REG
+; Area: _SFR1e
+00:FF41 _STAT_REG
+; Area: _SFR1f
+00:FF42 _SCY_REG
+; Area: _SFR20
+00:FF43 _SCX_REG
+; Area: _SFR21
+00:FF44 _LY_REG
+; Area: _SFR22
+00:FF45 _LYC_REG
+; Area: _SFR23
+00:FF46 _DMA_REG
+; Area: _SFR24
+00:FF47 _BGP_REG
+; Area: _SFR25
+00:FF48 _OBP0_REG
+; Area: _SFR26
+00:FF49 _OBP1_REG
+; Area: _SFR27
+00:FF4A _WY_REG
+; Area: _SFR28
+00:FF4B _WX_REG
+; Area: _SFR29
+00:FF4D _KEY1_REG
+; Area: _SFR2a
+00:FF4F _VBK_REG
+; Area: _SFR2b
+00:FF51 _HDMA1_REG
+; Area: _SFR2c
+00:FF52 _HDMA2_REG
+; Area: _SFR2d
+00:FF53 _HDMA3_REG
+; Area: _SFR2e
+00:FF54 _HDMA4_REG
+; Area: _SFR2f
+00:FF55 _HDMA5_REG
+; Area: _SFR30
+00:FF56 _RP_REG
+; Area: _SFR31
+00:FF68 _BCPS_REG
+; Area: _SFR32
+00:FF69 _BCPD_REG
+; Area: _SFR33
+00:FF6A _OCPS_REG
+; Area: _SFR34
+00:FF6B _OCPD_REG
+; Area: _SFR35
+00:FF70 _SVBK_REG
+; Area: _SFR36
+00:FFFF _IE_REG
+; Area: _FONT_HEADER0
+; Area: _DRAW_HEADER0
+; Area: .  .ABS.
+00:0000 .__.ABS.
+; Area: _CALLHL_HEADER0
+00:0020 ___sdcc_call_hl
